@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="praktika.js" defer></script>
+</head>
+<body>
+	<div id="sidebar">
+		<div class="toggle-btn" onclick="openMenu()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul>
+			<li>Body radius: <input type="number" class="radius"> m</li>
+			<li>Body mass: <input type="number" class="mass"> kg</li>
+			<li>Start coordinate x: <input type="number" class="xcoordinate"></li>
+			<li>Start coordinate y: <input type="number" class="ycoordinate"></li>
+			<li><button class="venus" onclick="generateVenus()">Venus</button></li>
+			<li><button class="earth" onclick="generateEarth()">Earth</button></li>
+		</ul>
+	</div>
+<hr/>
+<div id="chartContainer" style="height: 700px; width: 700px;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+</body>
+</html>
